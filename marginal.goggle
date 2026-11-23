@@ -1,0 +1,209 @@
+! name: Web marginal
+! description: Fait remonter le petit web : blogs personnels, sites indépendants, jardins numériques, communautés de niche et sites artisanaux. Rétrograde les géants, les fermes de contenu et les sites optimisés pour le SEO.
+! public: true
+! author: VotreNom
+! avatar: #7C3AED
+
+! ==========================================================
+! ===== BOOST : annuaires et communautés du petit web =====
+! ==========================================================
+$boost=4,site=indieweb.org
+$boost=4,site=neocities.org
+$boost=4,site=wiby.me
+$boost=4,site=marginalia.nu
+$boost=4,site=search.marginalia.nu
+$boost=3,site=blogroll.org
+$boost=3,site=ooh.directory
+$boost=3,site=webring.xxiivv.com
+$boost=3,site=512kb.club
+$boost=3,site=1mb.club
+$boost=3,site=250kb.club
+$boost=3,site=smolweb.org
+$boost=3,site=smol.pub
+$boost=3,site=bearblog.dev
+$boost=3,site=lieu.cblgh.org
+$boost=3,site=gemini.circumlunar.space
+$boost=3,site=geminiquickst.art
+$boost=3,site=tilde.club
+$boost=3,site=tilde.town
+$boost=3,site=tildeverse.org
+$boost=3,site=sdf.org
+
+! ==========================================================
+! ===== BOOST : hébergeurs de sites personnels =====
+! ==========================================================
+$boost=3,site=neocities.org
+$boost=3,site=github.io
+$boost=3,site=gitlab.io
+$boost=3,site=codeberg.page
+$boost=3,site=srht.site
+$boost=3,site=bearblog.dev
+$boost=3,site=write.as
+$boost=3,site=writefreely.org
+$boost=3,site=micro.blog
+$boost=3,site=ghost.io
+$boost=3,site=hashnode.dev
+$boost=2,site=wordpress.com
+$boost=2,site=blogspot.com
+$boost=2,site=over-blog.com
+$boost=2,site=free.fr
+$boost=2,site=pagesperso-orange.fr
+$boost=2,site=chez.com
+$boost=2,site=geocities.ws
+
+! ==========================================================
+! ===== BOOST : communautés et forums de niche =====
+! ==========================================================
+$boost=3,site=lobste.rs
+$boost=3,site=tildes.net
+$boost=3,site=slashdot.org
+$boost=3,site=metafilter.com
+$boost=3,site=lemmy.world
+$boost=3,site=lemmy.ml
+$boost=3,site=kbin.social
+$boost=3,site=mastodon.social
+$boost=3,site=hashtag.fr
+$boost=2,site=news.ycombinator.com
+$boost=2,site=phpbb.com
+
+! ==========================================================
+! ===== BOOST : motifs d'URL typiques des sites personnels =====
+! ==========================================================
+! Pages perso de type ~utilisateur
+/~$boost=3
+! Sections de blog personnel
+/blog/$boost=1
+/blog$boost=1
+/posts/$boost=1
+/notes/$boost=2
+/garden/$boost=2
+/digital-garden/$boost=2
+/jardin/$boost=2
+/carnet/$boost=2
+/journal/$boost=1
+/log/$boost=1
+/wiki/$boost=1
+! Pages typiques de personnalité du web
+/about$boost=1
+/a-propos$boost=1
+/now$boost=1
+/colophon$boost=2
+/links$boost=2
+/liens$boost=2
+/blogroll$boost=2
+/webring$boost=2
+/uses$boost=1
+! Fichiers de syndication, signe d'un site personnel
+/rss$boost=1
+/feed$boost=1
+/atom.xml$boost=1
+
+! ==========================================================
+! ===== DOWNRANK : réseaux sociaux et plateformes dominantes =====
+! ==========================================================
+$downrank=4,site=facebook.com
+$downrank=4,site=instagram.com
+$downrank=4,site=tiktok.com
+$downrank=4,site=x.com
+$downrank=4,site=twitter.com
+$downrank=4,site=linkedin.com
+$downrank=4,site=pinterest.com
+$downrank=4,site=pinterest.fr
+$downrank=3,site=reddit.com
+$downrank=3,site=quora.com
+$downrank=3,site=youtube.com
+$downrank=3,site=twitch.tv
+$downrank=3,site=snapchat.com
+$downrank=3,site=threads.net
+
+! ===== DOWNRANK : grandes plateformes de publication =====
+$downrank=3,site=medium.com
+$downrank=3,site=substack.com
+$downrank=2,site=tumblr.com
+
+! ==========================================================
+! ===== DOWNRANK : e-commerce et comparateurs =====
+! ==========================================================
+$downrank=4,site=amazon.com
+$downrank=4,site=amazon.fr
+$downrank=4,site=amazon.co.uk
+$downrank=4,site=ebay.com
+$downrank=4,site=ebay.fr
+$downrank=4,site=aliexpress.com
+$downrank=4,site=cdiscount.com
+$downrank=4,site=fnac.com
+$downrank=4,site=rakuten.com
+$downrank=4,site=walmart.com
+$downrank=3,site=leboncoin.fr
+$downrank=3,site=etsy.com
+$downrank=3,site=booking.com
+$downrank=3,site=tripadvisor.fr
+$downrank=3,site=tripadvisor.com
+$downrank=3,site=trustpilot.com
+$downrank=3,site=idealo.fr
+$downrank=3,site=ldlc.com
+
+! ==========================================================
+! ===== DOWNRANK : grands médias et agrégateurs =====
+! ==========================================================
+$downrank=3,site=lemonde.fr
+$downrank=3,site=lefigaro.fr
+$downrank=3,site=liberation.fr
+$downrank=3,site=20minutes.fr
+$downrank=3,site=bfmtv.com
+$downrank=3,site=cnews.fr
+$downrank=3,site=francetvinfo.fr
+$downrank=3,site=lci.fr
+$downrank=3,site=cnn.com
+$downrank=3,site=bbc.com
+$downrank=3,site=bbc.co.uk
+$downrank=3,site=nytimes.com
+$downrank=3,site=theguardian.com
+$downrank=3,site=foxnews.com
+$downrank=3,site=dailymail.co.uk
+$downrank=3,site=msn.com
+$downrank=3,site=yahoo.com
+$downrank=3,site=news.google.com
+$downrank=3,site=buzzfeed.com
+$downrank=3,site=huffpost.com
+$downrank=3,site=forbes.com
+$downrank=3,site=businessinsider.com
+
+! ===== DOWNRANK : fermes de contenu et sites orientés SEO =====
+$downrank=4,site=wikihow.com
+$downrank=4,site=ehow.com
+$downrank=4,site=answers.com
+$downrank=4,site=ranker.com
+$downrank=4,site=listverse.com
+$downrank=4,site=doctissimo.fr
+$downrank=4,site=journaldesfemmes.fr
+$downrank=4,site=commentcamarche.net
+$downrank=4,site=linternaute.com
+$downrank=4,site=ouest-france.fr
+$downrank=3,site=cnet.com
+$downrank=3,site=techradar.com
+$downrank=3,site=tomsguide.com
+$downrank=3,site=pcmag.com
+$downrank=3,site=lifewire.com
+$downrank=3,site=thespruce.com
+$downrank=3,site=healthline.com
+$downrank=3,site=webmd.com
+$downrank=3,site=forbes.com
+$downrank=3,site=investopedia.com
+$downrank=3,site=nerdwallet.com
+$downrank=3,site=bankrate.com
+$downrank=3,site=lesnumeriques.com
+$downrank=3,site=01net.com
+$downrank=3,site=clubic.com
+$downrank=3,site=frandroid.com
+$downrank=3,site=journaldunet.com
+$downrank=3,site=capital.fr
+$downrank=3,site=ladepeche.fr
+
+! ===== DOWNRANK : plateformes de streaming et divertissement mainstream =====
+$downrank=3,site=netflix.com
+$downrank=3,site=imdb.com
+$downrank=3,site=allocine.fr
+$downrank=3,site=spotify.com
+$downrank=3,site=deezer.com
+$downrank=3,site=genius.com
