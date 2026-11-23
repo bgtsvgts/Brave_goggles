@@ -1,0 +1,81 @@
+! name: Articles encyclopédiques
+! description: Met en avant les encyclopédies généralistes et spécialisées, ainsi que les dictionnaires de référence.
+! public: true
+! author: VotreNom
+! avatar: #0F766E
+
+! ===== Encyclopédies collaboratives (Wikimedia) =====
+$boost=4,site=wikipedia.org
+$boost=3,site=vikidia.org
+$boost=2,site=wikisource.org
+$boost=2,site=wiktionary.org
+$boost=2,site=wikidata.org
+$boost=2,site=wikibooks.org
+$boost=2,site=wikiversity.org
+
+! ===== Encyclopédies généralistes =====
+$boost=4,site=universalis.fr
+$boost=4,site=larousse.fr
+$boost=4,site=britannica.com
+$boost=3,site=encyclopedia.com
+$boost=3,site=newworldencyclopedia.org
+$boost=3,site=treccani.it
+$boost=3,site=brockhaus.de
+$boost=3,site=enciclopedia.cat
+$boost=3,site=snl.no
+$boost=3,site=thecanadianencyclopedia.ca
+$boost=3,site=hls-dhs-dss.ch
+$boost=2,site=citizendium.org
+
+! ===== Encyclopédies spécialisées =====
+! Philosophie
+$boost=4,site=plato.stanford.edu
+$boost=4,site=iep.utm.edu
+$boost=3,site=rep.routledge.com
+! Sciences
+$boost=3,site=scholarpedia.org
+$boost=3,site=mathworld.wolfram.com
+$boost=3,site=encyclopediaofmath.org
+$boost=3,site=nlab-pages.s3.us-east-2.amazonaws.com
+$boost=3,site=ncatlab.org
+$boost=3,site=encyclopedie-environnement.org
+! Histoire
+$boost=3,site=worldhistory.org
+$boost=3,site=encyclopedie.bseditions.fr
+$boost=3,site=herodote.net
+! Arts, lettres, religions
+$boost=3,site=oxfordreference.com
+$boost=3,site=oxfordbibliographies.com
+$boost=3,site=encyclopedia.ushmm.org
+$boost=2,site=imago-mundi.net
+! Santé
+$boost=3,site=vidal.fr
+$boost=3,site=medlineplus.gov
+$boost=3,site=msdmanuals.com
+
+! ===== Dictionnaires de référence =====
+$boost=3,site=cnrtl.fr
+$boost=3,site=dictionnaire.lerobert.com
+$boost=3,site=dictionnaire-academie.fr
+$boost=2,site=merriam-webster.com
+$boost=2,site=oed.com
+
+! ===== Encyclopédie historique =====
+$boost=2,site=enccre.academie-sciences.fr
+
+! ===== Motifs d'URL typiques =====
+/wiki/$boost=1
+/encyclopedie/$boost=2
+/encyclopedia/$boost=2
+/entries/$boost=1
+
+! ===== Rétrogradation : miroirs, fermes de contenu, wikis de fans =====
+$downrank=3,site=wikimonde.com
+$downrank=3,site=wiki2.org
+$downrank=3,site=dbpedia.org
+$downrank=3,site=everybodywiki.com
+$downrank=2,site=fandom.com
+$downrank=2,site=wikihow.com
+$downrank=2,site=quora.com
+$downrank=2,site=pinterest.com
+$downrank=2,site=reddit.com
