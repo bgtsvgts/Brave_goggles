@@ -1,0 +1,101 @@
+! name: Articles académiques
+! description: Met en avant les sites web publiant des articles scientifiques (revues, archives ouvertes, bases bibliographiques, éditeurs académiques).
+! public: true
+! author: VotreNom
+! avatar: #1E3A8A
+
+! ===== Archives ouvertes & preprints =====
+$boost=4,site=arxiv.org
+$boost=4,site=biorxiv.org
+$boost=4,site=medrxiv.org
+$boost=4,site=hal.science
+$boost=4,site=hal.archives-ouvertes.fr
+$boost=3,site=ssrn.com
+$boost=3,site=osf.io
+$boost=3,site=zenodo.org
+$boost=3,site=chemrxiv.org
+$boost=3,site=psyarxiv.com
+$boost=3,site=researchsquare.com
+
+! ===== Bases de données & moteurs académiques =====
+$boost=4,site=pubmed.ncbi.nlm.nih.gov
+$boost=4,site=ncbi.nlm.nih.gov
+$boost=4,site=europepmc.org
+$boost=3,site=semanticscholar.org
+$boost=3,site=doaj.org
+$boost=3,site=core.ac.uk
+$boost=3,site=jstor.org
+$boost=3,site=persee.fr
+$boost=3,site=cairn.info
+$boost=3,site=openedition.org
+$boost=3,site=erudit.org
+$boost=3,site=theses.fr
+$boost=3,site=dblp.org
+$boost=2,site=openalex.org
+$boost=2,site=base-search.net
+
+! ===== Éditeurs & revues scientifiques =====
+$boost=3,site=nature.com
+$boost=3,site=science.org
+$boost=3,site=cell.com
+$boost=3,site=thelancet.com
+$boost=3,site=nejm.org
+$boost=3,site=bmj.com
+$boost=3,site=plos.org
+$boost=3,site=journals.plos.org
+$boost=3,site=frontiersin.org
+$boost=3,site=mdpi.com
+$boost=3,site=sciencedirect.com
+$boost=3,site=springer.com
+$boost=3,site=link.springer.com
+$boost=3,site=onlinelibrary.wiley.com
+$boost=3,site=tandfonline.com
+$boost=3,site=journals.sagepub.com
+$boost=3,site=academic.oup.com
+$boost=3,site=cambridge.org
+$boost=3,site=ieeexplore.ieee.org
+$boost=3,site=dl.acm.org
+$boost=3,site=pubs.acs.org
+$boost=3,site=pubs.rsc.org
+$boost=3,site=iopscience.iop.org
+$boost=3,site=journals.aps.org
+$boost=3,site=pnas.org
+$boost=3,site=elifesciences.org
+$boost=3,site=peerj.com
+$boost=3,site=hindawi.com
+$boost=3,site=royalsocietypublishing.org
+$boost=3,site=annualreviews.org
+$boost=3,site=degruyter.com
+$boost=3,site=muse.jhu.edu
+
+! ===== Identifiants & métadonnées =====
+$boost=2,site=doi.org
+$boost=2,site=crossref.org
+$boost=2,site=orcid.org
+
+! ===== Motifs d'URL typiques d'articles =====
+/doi/$boost=2
+/abs/$boost=1
+/article/$boost=1
+/articles/$boost=1
+/full/$boost=1
+*.pdf$boost=1
+
+! ===== Domaines universitaires et de recherche =====
+$boost=2,site=edu
+$boost=2,site=cnrs.fr
+$boost=2,site=inserm.fr
+$boost=2,site=inrae.fr
+
+! ===== Réseaux académiques (moins fiables, boost léger) =====
+$boost=1,site=researchgate.net
+$boost=1,site=academia.edu
+
+! ===== Rétrogradation des contenus non académiques =====
+$downrank=3,site=pinterest.com
+$downrank=3,site=quora.com
+$downrank=2,site=facebook.com
+$downrank=2,site=instagram.com
+$downrank=2,site=tiktok.com
+$downrank=2,site=x.com
+$downrank=2,site=twitter.com
