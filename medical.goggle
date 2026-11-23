@@ -1,0 +1,186 @@
+! name: Ressources médicales professionnelles
+! description: Met en avant les ressources médicales destinées aux professionnels de santé (recommandations, autorités sanitaires, revues, bases de médicaments, outils cliniques), en français et en anglais.
+! public: true
+! author: VotreNom
+! avatar: #B91C1C
+
+! ==========================================================
+! ===== FRANCOPHONE =====
+! ==========================================================
+
+! ----- Autorités sanitaires & agences (France) -----
+$boost=5,site=has-sante.fr
+$boost=4,site=ansm.sante.fr
+$boost=4,site=santepubliquefrance.fr
+$boost=3,site=sante.gouv.fr
+$boost=3,site=base-donnees-publique.medicaments.gouv.fr
+$boost=3,site=inserm.fr
+$boost=3,site=inca.fr
+$boost=3,site=e-cancer.fr
+$boost=2,site=ameli.fr
+
+! ----- Autorités sanitaires (Belgique, Suisse, Québec, Canada) -----
+$boost=4,site=kce.fgov.be
+$boost=4,site=cbip.be
+$boost=3,site=ebpnet.be
+$boost=3,site=sciensano.be
+$boost=4,site=swissmedic.ch
+$boost=3,site=compendium.ch
+$boost=4,site=inesss.qc.ca
+$boost=3,site=inspq.qc.ca
+$boost=3,site=cmq.org
+$boost=3,site=cps.ca
+
+! ----- Médicaments & pharmacologie -----
+$boost=4,site=vidal.fr
+$boost=4,site=prescrire.org
+$boost=4,site=lecrat.fr
+$boost=3,site=theriaque.org
+$boost=3,site=antibioclic.com
+$boost=3,site=mesvaccins.net
+$boost=3,site=hug.ch
+
+! ----- Sociétés savantes francophones -----
+$boost=3,site=infectiologie.com
+$boost=3,site=sfar.org
+$boost=3,site=sfmu.org
+$boost=3,site=sfcardio.fr
+$boost=3,site=splf.fr
+$boost=3,site=cngof.fr
+$boost=3,site=sfpediatrie.com
+$boost=3,site=sfendocrino.org
+$boost=3,site=sfdermato.org
+$boost=3,site=sfndt.org
+$boost=3,site=snfge.org
+$boost=3,site=sfr.org
+$boost=3,site=cnge.fr
+$boost=3,site=college-ccmg.fr
+
+! ----- Revues & ressources documentaires francophones -----
+$boost=3,site=revmed.ch
+$boost=3,site=larevuedupraticien.fr
+$boost=3,site=em-consulte.com
+$boost=3,site=jle.com
+$boost=3,site=edimark.fr
+$boost=3,site=cismef.org
+$boost=3,site=lissa.fr
+$boost=2,site=medecinesciences.org
+$boost=2,site=cairn.info
+
+! ==========================================================
+! ===== ANGLOPHONE =====
+! ==========================================================
+
+! ----- Autorités sanitaires & agences -----
+$boost=5,site=nice.org.uk
+$boost=4,site=cdc.gov
+$boost=4,site=nih.gov
+$boost=4,site=fda.gov
+$boost=4,site=ema.europa.eu
+$boost=4,site=ecdc.europa.eu
+$boost=4,site=who.int
+$boost=3,site=sign.ac.uk
+$boost=3,site=cancer.gov
+$boost=3,site=canada.ca
+$boost=3,site=tga.gov.au
+
+! ----- Bases bibliographiques & médecine factuelle -----
+$boost=4,site=pubmed.ncbi.nlm.nih.gov
+$boost=4,site=ncbi.nlm.nih.gov
+$boost=4,site=cochranelibrary.com
+$boost=4,site=cochrane.org
+$boost=3,site=europepmc.org
+$boost=3,site=tripdatabase.com
+$boost=3,site=epistemonikos.org
+$boost=3,site=clinicaltrials.gov
+$boost=3,site=clinicaltrialsregister.eu
+$boost=3,site=dailymed.nlm.nih.gov
+
+! ----- Grandes revues médicales -----
+$boost=4,site=nejm.org
+$boost=4,site=thelancet.com
+$boost=4,site=bmj.com
+$boost=4,site=jamanetwork.com
+$boost=3,site=acpjournals.org
+$boost=3,site=ahajournals.org
+$boost=3,site=academic.oup.com
+$boost=3,site=journals.lww.com
+$boost=3,site=sciencedirect.com
+$boost=3,site=link.springer.com
+$boost=3,site=onlinelibrary.wiley.com
+$boost=3,site=nature.com
+$boost=3,site=cmaj.ca
+$boost=3,site=mja.com.au
+
+! ----- Références cliniques & aide à la décision -----
+$boost=4,site=uptodate.com
+$boost=4,site=bestpractice.bmj.com
+$boost=4,site=dynamed.com
+$boost=3,site=medscape.com
+$boost=3,site=emedicine.medscape.com
+$boost=3,site=mdcalc.com
+$boost=3,site=radiopaedia.org
+$boost=3,site=dermnetnz.org
+$boost=3,site=litfl.com
+$boost=3,site=gpnotebook.com
+$boost=3,site=guidelinecentral.com
+$boost=2,site=drugs.com
+
+! ----- Sociétés savantes anglophones -----
+$boost=3,site=escardio.org
+$boost=3,site=acc.org
+$boost=3,site=heart.org
+$boost=3,site=idsociety.org
+$boost=3,site=nccn.org
+$boost=3,site=asco.org
+$boost=3,site=aafp.org
+$boost=3,site=publications.aap.org
+$boost=3,site=acog.org
+$boost=3,site=diabetesjournals.org
+$boost=3,site=ersnet.org
+$boost=3,site=ginasthma.org
+$boost=3,site=goldcopd.org
+$boost=3,site=kdigo.org
+$boost=3,site=eular.org
+
+! ==========================================================
+! ===== Sections « professionnels » vs « grand public » =====
+! ==========================================================
+! MSD / Merck Manuals : versions professionnelles boostées, versions grand public rétrogradées
+/professional/$boost=4,site=msdmanuals.com
+/professional/$boost=4,site=merckmanuals.com
+/accueil/$downrank=3,site=msdmanuals.com
+/home/$downrank=3,site=msdmanuals.com
+/home/$downrank=3,site=merckmanuals.com
+! Ameli : espace professionnels
+/medecin/$boost=3,site=ameli.fr
+/pharmacien/$boost=3,site=ameli.fr
+! Patient.info : section professionnelle
+/doctor/$boost=3,site=patient.info
+
+! ===== Motifs d'URL typiques =====
+/recommandations/$boost=2
+/guidelines/$boost=2
+/guideline/$boost=2
+/doi/$boost=1
+
+! ==========================================================
+! ===== Rétrogradation : santé grand public & peu fiable =====
+! ==========================================================
+$downrank=4,site=doctissimo.fr
+$downrank=4,site=passeportsante.net
+$downrank=4,site=sante-medecine.journaldesfemmes.fr
+$downrank=3,site=topsante.com
+$downrank=3,site=femmeactuelle.fr
+$downrank=3,site=santemagazine.fr
+$downrank=3,site=pourquoidocteur.fr
+$downrank=3,site=healthline.com
+$downrank=3,site=webmd.com
+$downrank=3,site=verywellhealth.com
+$downrank=3,site=medicalnewstoday.com
+$downrank=3,site=everydayhealth.com
+$downrank=3,site=pinterest.com
+$downrank=3,site=quora.com
+$downrank=2,site=facebook.com
+$downrank=2,site=tiktok.com
+$downrank=2,site=instagram.com
